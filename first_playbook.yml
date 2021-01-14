@@ -1,7 +1,7 @@
 ---
 
 - name: Network Getting Started First Playbook
-  #connection: network_cli
+  connection: ssh
   gather_facts: false
   hosts: all
   tasks:
