@@ -18,3 +18,5 @@
       ios_ping:
         dest: 192.168.90.250
 
+  vars:
+    ansible_network_os: ios
