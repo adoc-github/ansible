@@ -3,7 +3,7 @@
 - name: Network Getting Started First Playbook
   connection: ssh
   gather_facts: false
-  hosts: C3750
+  hosts: all
   tasks:
 
     - name: Get config for IOS devices
