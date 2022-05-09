@@ -3,3 +3,9 @@
   tasks:
   - name: Apacheをインストール
     yum: name=httpd state=latest
+
+  - name: Apacheサービスの起動
+    systemd:
+      name: httpd.service
+      state: restarted
+      enabled: yes
