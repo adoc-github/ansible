@@ -9,3 +9,9 @@
       name: httpd.service
       state: restarted
       enabled: yes
+
+  - name: Firewallサービスの停止
+    systemd:
+      name: firewalld.service
+      state: stopped
+      enabled: no
