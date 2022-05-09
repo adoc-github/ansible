@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+  - name: Apacheをインストール
+    yum: name=httpd state=latest
